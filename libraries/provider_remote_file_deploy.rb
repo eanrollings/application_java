@@ -35,6 +35,7 @@ class Chef
           end
           @new_resource.owner @deploy_resource.user
           @new_resource.group @deploy_resource.group
+          provider = @new_resource.provider
           @action = action
           @current_resource = nil
           @run_context = run_context
